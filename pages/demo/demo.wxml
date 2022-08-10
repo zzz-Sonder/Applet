@@ -1,0 +1,9 @@
+<!--pages/demo/demo.wxml-->
+<text>{{10+20 }}</text>
+<view>{{10>20?'a':'b'}}</view>
+
+
+<view>{{myname}}</view>
+
+<view id="my-{{ids[0]}}">aaa</view>
+<view id="my-{{ids[1]}}">bbb</view>
