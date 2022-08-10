@@ -1,25 +1,25 @@
-// pages/demo/demo.js
+// pages/4-wxs/4-wxs.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        myname:"zzz-xxx",
-        ids:["aaa","bbb"],
-        list:["98","87","104"],
-        iscreated:true,
-        isHidden:true
+        startTime:21314235211,
+        goodsList:["aaa","bbb","ccc","vvv","asd","sav"],
+        mytext:''
+        
+    },
+    handleInput(ev){
+        console.log(ev.detail.value);
+        this.setData({
+            mytext:ev.detail.value
+        })
     },
 
-    handleTap:function(){
-        console.log("click",this.data.myname);
-        this.setData({
-            myname:"xxx-zzz",
-            isHidden:!this.data.isHidden
-        })
-        console.log(this.data.myname);
-    },
+    // handleDate(){
+    //     return "111111111111"
+    // },
 
     /**
      * 生命周期函数--监听页面加载

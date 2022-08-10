@@ -7,3 +7,19 @@
 
 <view id="my-{{ids[0]}}">aaa</view>
 <view id="my-{{ids[1]}}">bbb</view>
+
+<view wx:for="{{list}}" wx:for-item="zzx_ietm" wx:for-index="zzx_index">
+{{zzx_ietm}}--{{zzx_index}}
+</view>
+
+<view wx:for="{{list}}" wx:key="item">
+{{item}}--{{index}}
+</view>
+
+<view wx:if="{{iscreated}}">动态删除-11</view>
+<view wx:else="{{iscreated}}">动态删除-22</view>
+
+<view hidden="{{isHidden}}">我是动态隐藏和显示</view>
+
+<button type="primary" bindtap="handleTap">click1</button>
+<button type="primary" catchtap="handleTap">click2</button>

@@ -1,24 +1,11 @@
-// pages/demo/demo.js
+// pages/3-rpx/3-rpx.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        myname:"zzz-xxx",
-        ids:["aaa","bbb"],
-        list:["98","87","104"],
-        iscreated:true,
-        isHidden:true
-    },
 
-    handleTap:function(){
-        console.log("click",this.data.myname);
-        this.setData({
-            myname:"xxx-zzz",
-            isHidden:!this.data.isHidden
-        })
-        console.log(this.data.myname);
     },
 
     /**

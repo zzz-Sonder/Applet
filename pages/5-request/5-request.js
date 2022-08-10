@@ -1,26 +1,28 @@
-// pages/demo/demo.js
+// pages/5-request/5-request.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        myname:"zzz-xxx",
-        ids:["aaa","bbb"],
-        list:["98","87","104"],
-        iscreated:true,
-        isHidden:true
+      datalist:[]
     },
+    handleAjax(){
+        wx.request({
+           'url': 'https://m.maoyan.com/ajax/movieonInfoList?token=&optimus_uuid=74B5FOA032A711EB82DD6B9282E93C676D27D7B9731D4E608D7612C3E708c120&optimus_risk_level=71&optimus_code=10',
+          method:"get",
+          data:{
 
-    handleTap:function(){
-        console.log("click",this.data.myname);
-        this.setData({
-            myname:"xxx-zzz",
-            isHidden:!this.data.isHidden
+          },
+          success:(res)=>{
+            console.log(res.data);
+            this.setData({datalist:res.data.movieList})
+          },
+          fail:()=>{
+            console.log("失败");  
+          }
         })
-        console.log(this.data.myname);
     },
-
     /**
      * 生命周期函数--监听页面加载
      */

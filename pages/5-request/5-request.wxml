@@ -1,0 +1,6 @@
+<!--pages/5-request/5-request.wxml-->
+<button type="primary" bindtap="handleAjax">ajax</button>
+
+<view wx:for="{{datalist}}"  wx:key="index">
+{{item.nm}}
+</view>
