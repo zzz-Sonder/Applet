@@ -1,0 +1,17 @@
+<!--pages/8-scrollview/8-scrollview.wxml-->
+<view style="height: 200px; background:yellow;"></view>
+
+<scroll-view class="box_horizontal" 	enable-flex="{{true}}">
+    <view class="item_horizontal">1</view>
+    <view class="item_horizontal">2</view>
+    <view class="item_horizontal">3</view>
+    <view class="item_horizontal">4 </view>
+</scroll-view>
+
+
+
+<scroll-view class="box" scroll-y="{{true}}" bindscrolltolower="handlescrolltolower" refresher-enabled="{{true}}" bindrefresherrefresh="handleRefresh" refresher-triggered="{{isRefresh}}"> 
+    <view class="item">1111111111111111</view>
+    <view class="item">2222222222222222</view>
+    <view class="item">3333333333333333</view>
+</scroll-view>

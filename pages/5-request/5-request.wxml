@@ -3,4 +3,5 @@
 
 <view wx:for="{{datalist}}"  wx:key="index">
 {{item.nm}}
+<image src="{{item.img}}"></image>
 </view>

@@ -1,6 +1,6 @@
 {
     "pages": [
-        "pages/5-request/5-request",
+        "pages/10-selfComponent/10-selfComponent",
         "pages/home/home",
         "pages/center/center"
     ],
@@ -19,7 +19,7 @@
       "position": "bottom",
       "list": [
       {
-        "pagePath": "pages/5-request/5-request",
+        "pagePath": "pages/10-selfComponent/10-selfComponent",
         "text": "测试",
         "iconPath": "images/camera.png",
         "selectedIconPath": "images/camera_light.png"

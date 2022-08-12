@@ -1,15 +1,11 @@
-// pages/home/home.js
+// pages/10-selfComponent/10-selfComponent.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    current:0,
 
-    cateItems:['衣服','裤子','帽子'],
-
-    cateList:["衣服的相关数据","裤子的相关数据","帽子的相关数据"]
   },
 
   /**
@@ -66,21 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  handleChange(evt){
-    console.log(evt)
-    console.log(evt.detail.current)
-    this.setData({
-      current:evt.detail.current
-    })
-  },
-
-  handleEvent(evt){
-    console.log("父组件定义，执行",evt.detail)
-
-    this.setData({
-      current:evt.detail
-    })
   }
 })
