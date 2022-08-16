@@ -9,8 +9,8 @@
         "miniprogram": {
             "list": [
                 {
-                    "name": "pages/home/home",
-                    "pathName": "pages/home/home",
+                    "name": "pages/demo/demo",
+                    "pathName": "pages/demo/demo",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
